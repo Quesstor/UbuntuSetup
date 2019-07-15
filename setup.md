@@ -12,7 +12,7 @@ git config --global user.email quesstor@gmail.com
 xdg-open https://code.visualstudio.com/Download
 ```
 
-zsh + oh-my-zsh + tilda
+## zsh + oh-my-zsh + tilda
 
 ```bash
 sudo apt -y install zsh
@@ -27,14 +27,15 @@ source ~/.zshrc
 sudo apt -y install tilda
 ```
 
+### Autosuggestions
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/g' ~/.zshrc 
+```
 
 ```bash
 sudo snap install mailspring
 ```
-
-Add `/usr/bin/tilda` to autostart
-Add `/snap/bin/mailspring` to autostart
-
 
 ```
 sudo ubuntu-drivers autoinstall
@@ -44,9 +45,12 @@ Monitor setup
 ```bash
 gsettings set org.gnome.desktop.interface scaling-factor 2
 
-xrandr --dpi 276 --fb 7680x2160 \
+echo "xrandr --dpi 276 --fb 7680x2160 \
     --output HDMI-1 --mode 1920x1080 --scale 2x2 --pos 0x0 --panning 3840x2160+0+0 \
-    --output HDMI-0 --mode 3840x2160 --scale 1x1 --pos 3840x0 --panning 3840x2160+3840+0
-
-xrandr --output HDMI-0 --scale 1.3x1.3
+    --output HDMI-0 --mode 3840x2160 --scale 1x1 --pos 3840x0 --panning 3840x2160+3840+0" >> ~/.screenSetup
+echo "xrandr --output HDMI-0 --scale 1.3x1.3" >> ~/.screenSetup
 ```
+
+Add `/usr/bin/tilda` to autostart
+Add `/snap/bin/mailspring` to autostart
+Add `~/.screenSetup` to autostart
