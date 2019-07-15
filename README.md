@@ -23,6 +23,8 @@ echo "source /usr/share/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
 sudo apt-get install zsh-syntax-highlighting
 echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 echo "ZSH_THEME=\"agnoster\"" >> ~/.zshrc
+chsh -s $(which zsh)
+zsh
 source ~/.zshrc
 sudo apt -y install tilda
 ```
