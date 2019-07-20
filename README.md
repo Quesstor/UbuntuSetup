@@ -3,7 +3,7 @@
 
 ## Shell
 
-### zsh + oh-my-zsh
+### zsh + oh-my-zsh https://ohmyz.sh/
 
 ```bash
 sudo apt -y install zsh
@@ -15,7 +15,7 @@ zsh
 source ~/.zshrc
 ```
 
-### zsh-theme-powerlevel9k
+### zsh-theme-powerlevel9k https://github.com/Powerlevel9k/powerlevel9k
 
 ```bash
 sudo apt -y install zsh-theme-powerlevel9k
@@ -23,7 +23,7 @@ echo "source /usr/share/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
 source ~/.zshrc
 ```
 
-### zsh-syntax-highlighting
+### zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting
 
 ```bash
 sudo apt-get install zsh-syntax-highlighting
@@ -31,14 +31,14 @@ echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 source ~/.zshrc
 ```
 
-### zsh-autosuggestions
+### zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/g' ~/.zshrc 
 source ~/.zshrc
 ```
 
-### Tilda
+### Tilda https://wiki.ubuntuusers.de/Tilda/
 
 ```bash
 sudo apt -y install tilda
