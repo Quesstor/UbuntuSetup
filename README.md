@@ -1,49 +1,76 @@
 # Installation
 
 
+## Shell
+
+### zsh + oh-my-zsh
+
+```bash
+sudo apt -y install zsh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+echo "ZSH_THEME=\"agnoster\"" >> ~/.zshrc
+chsh -s $(which zsh)
+zsh
+source ~/.zshrc
+```
+
+### zsh-theme-powerlevel9k
+
+```bash
+sudo apt -y install zsh-theme-powerlevel9k
+echo "source /usr/share/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
+source ~/.zshrc
+```
+
+### zsh-syntax-highlighting
+
+```bash
+sudo apt-get install zsh-syntax-highlighting
+echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+source ~/.zshrc
+```
+
+### zsh-autosuggestions
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/g' ~/.zshrc 
+source ~/.zshrc
+```
+
+### Tilda
+
+```bash
+sudo apt -y install tilda
+```
+
+## Programs
+
+### Mailspring
+```bash
+sudo snap install mailspring
+```
+
+### Git
 ```bash
 sudo apt -y install git
 git config --global credential.helper store
 git config --global user.name Quesstor
 git config --global user.email quesstor@gmail.com
 ```
-
+### vscode
 ```bash
 xdg-open https://code.visualstudio.com/Download
 ```
 
-## zsh + oh-my-zsh + tilda
+## Ubuntu setup
 
-```bash
-sudo apt -y install zsh
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
-sudo apt -y install zsh-theme-powerlevel9k
-echo "source /usr/share/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
-sudo apt-get install zsh-syntax-highlighting
-echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-echo "ZSH_THEME=\"agnoster\"" >> ~/.zshrc
-chsh -s $(which zsh)
-zsh
-source ~/.zshrc
-sudo apt -y install tilda
-```
-
-### Autosuggestions
-```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/g' ~/.zshrc 
-```
-
-```bash
-sudo snap install mailspring
-```
-
+### Drivers
 ```
 sudo ubuntu-drivers autoinstall
 ```
 
-Monitor setup
+### Monitor setup
 ```bash
 gsettings set org.gnome.desktop.interface scaling-factor 2
 
