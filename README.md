@@ -63,6 +63,11 @@ git config --global user.email quesstor@gmail.com
 xdg-open https://code.visualstudio.com/Download
 ```
 
+### pip
+```bash
+sudo apt-get install python3-pip
+```
+
 ## Ubuntu setup
 
 ### Drivers
