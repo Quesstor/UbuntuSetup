@@ -51,6 +51,21 @@ source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
+Paste this into ~/.tmux.conf
+```config
+# split panes 
+bind -n M-d split-window -h
+bind -n M-s split-window -v
+unbind '"'
+unbind %
+
+# switch panes
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+```
+
 ### Tilda https://wiki.ubuntuusers.de/Tilda/
 
 ```bash
