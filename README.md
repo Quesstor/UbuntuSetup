@@ -64,6 +64,12 @@ bind -n M-Left select-pane -L
 bind -n M-Right select-pane -R
 bind -n M-Up select-pane -U
 bind -n M-Down select-pane -D
+
+#fullscreen
+bind -n M-w resize-pane -Z
+
+#enable scroll
+set -g mouse on 
 ```
 
 ### Tilda https://wiki.ubuntuusers.de/Tilda/
