@@ -37,6 +37,19 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/g' ~/.zshrc 
 source ~/.zshrc
 ```
+### zsh-tmux https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux
+Paste this into your ~/.zshrc
+```config
+export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="agnoster"
+ZSH_TMUX_AUTOSTART=true
+
+plugins=(git zsh-autosuggestions tmux)
+
+source $ZSH/oh-my-zsh.sh
+source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
 
 ### Tilda https://wiki.ubuntuusers.de/Tilda/
 
