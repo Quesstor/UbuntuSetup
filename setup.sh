@@ -1,3 +1,4 @@
+sudo apt update
 sudo apt-get -y install zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 chsh -s $(which zsh)
@@ -11,3 +12,6 @@ git config --global credential.helper store
 git config --global user.name Quesstor
 git config --global user.email quesstor@gmail.com
 xdg-open https://code.visualstudio.com/Download
+git clone https://github.com/Quesstor/UbuntuSetup.git ~/UbuntuSetup
+ln -s ~/.zshrc ~/UbuntuSetup/.zshrc
+ln -s ~/.tmux.conf ~/UbuntuSetup/.tmux.conf
