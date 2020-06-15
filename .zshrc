@@ -6,3 +6,6 @@ plugins=(git zsh-autosuggestions tmux)
 source $ZSH/oh-my-zsh.sh
 source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export PATH=$PATH:$HOME/go/bin
+stty intr ^k

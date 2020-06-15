@@ -13,5 +13,5 @@ git config --global user.name Quesstor
 git config --global user.email quesstor@gmail.com
 xdg-open https://code.visualstudio.com/Download
 git clone https://github.com/Quesstor/UbuntuSetup.git ~/UbuntuSetup
-ln -s ~/.zshrc ~/UbuntuSetup/.zshrc
-ln -s ~/.tmux.conf ~/UbuntuSetup/.tmux.conf
+ln -s ~/UbuntuSetup/.zshrc ~/.zshrc
+ln -s ~/UbuntuSetup/.tmux.conf ~/.tmux.conf
