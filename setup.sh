@@ -15,3 +15,8 @@ xdg-open https://code.visualstudio.com/Download
 git clone https://github.com/Quesstor/UbuntuSetup.git ~/UbuntuSetup
 ln -s ~/UbuntuSetup/.zshrc ~/.zshrc
 ln -s ~/UbuntuSetup/.tmux.conf ~/.tmux.conf
+
+mkdir ~/.fonts
+cp Menlo\ for\ Powerline.ttf ~/.fonts/
+fc-cache -vf ~/.fonts
+echo "Update VSCodes terminal font to: Menlo for Powerline"
