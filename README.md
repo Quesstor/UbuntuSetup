@@ -23,3 +23,14 @@ zsh
 source ~/.zshrc
 ```
 
+## Docker
+```bash
+sudo apt install docker.io
+sudo usermod -aG docker ${USER}
+reboot
+```
+
+## Python
+```bash
+sudo apt get install python3-pip
+```
