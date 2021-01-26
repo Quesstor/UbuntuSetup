@@ -15,8 +15,7 @@
 ln -s ~/UbuntuSetup/.tmux.conf ~/.tmux.conf
 ln -s ~/UbuntuSetup/.zshrc ~/.zshrc 
 sudo apt -y install zsh tmux zsh-theme-powerlevel9k zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 chsh -s $(which zsh)
 zsh
