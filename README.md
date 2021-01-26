@@ -36,5 +36,5 @@ sudo apt get install python3-pip
 
 ## Git 
 ```bash
-git config --global credential-helper store
+git config --global credential.helper store
 ```
